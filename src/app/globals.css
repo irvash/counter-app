@@ -3,8 +3,9 @@
 :root {
 
   /* Color Variables */
-  --background: #E0E0E0;
-  --mainClr: #3D058B;
+  --background: #1D122C;
+  --mainClr: #A96BFF;
+  --borderClr: #7125DB;
 
   /* Font Variables */
   --mainFF: 'Orbitron', sans-serif;
