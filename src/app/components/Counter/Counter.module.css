@@ -1,0 +1,17 @@
+.counter-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.counter-wrapper .circle {
+    width: 150px;
+    height: 150px;
+    border: 8px solid var(--borderClr);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--mainClr);
+}
