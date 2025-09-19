@@ -23,6 +23,7 @@ body {
   color: var(--mainClr);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
 }
 
 * {
@@ -39,3 +40,72 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
 }
+
+main.main {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+.counterWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+    border: 8px solid var(--borderClr);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 35px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--mainClr);
+    position: relative;
+}
+.circle span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.btnWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(158 88 255 / 27%);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    color: var(--mainClr)
+}
+.btn:hover {
+    background-color: rgb(158 88 255 / 33%);
+}
+.btn:first-of-type {
+    padding-bottom: 2px;
+}
+
+.oldNumber {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
